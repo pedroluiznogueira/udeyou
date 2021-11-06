@@ -1,0 +1,30 @@
+<article>
+    <img class="img" src="assets\img\udeyou-logo.png" alt="logo-deloitte">
+    <form>
+
+        <label>
+            Email:
+            <input type="text" name="usuario" id="usuario" placeholder="" [(ngModel)]="email">
+        </label>
+        <label>
+            Senha:
+            <input type="password" name="senha" id="senha" placeholder="" [(ngModel)]="senha">
+        </label>
+        <div *ngIf="loginNaoRealizado" class="alert alert-danger" role="alert">
+            Login não realizado
+            <span (click)="esconderErro()">x</span>
+        </div>
+        <div *ngIf="loginRealizado" class="alert alert-success" role="alert">
+            Login realizado com sucesso
+            <span (click)="esconderSucesso()">x</span>
+        </div>
+        <div class="controles">
+            <button type="submit" class="btn" (click)="validarCampos()">Salvar</button>
+        </div>
+
+        <div class="links">
+            <!-- <p [routerLink]="['/login-admin']" class="link">Login como administrador</p> -->
+            <p [routerLink]="['/cadastro']" class="link">Cadastre-se</p>
+        </div>
+    </form>
+</article>

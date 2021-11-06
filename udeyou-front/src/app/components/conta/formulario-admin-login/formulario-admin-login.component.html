@@ -1,0 +1,29 @@
+<article>
+    <img class="img" src="assets\img\Consult-logo.png" alt="logo-deloitte">
+    <form>
+        <label>
+            Email de administrador:
+            <input type="text" name="usuario" id="usuarioAdmin" placeholder="" [(ngModel)]="emailAdmin">
+        </label>
+        <label>
+            Senha de administrador:
+            <input type="password" id="senhaAdmin" name="senha" placeholder="" [(ngModel)]="senhaAdmin">
+        </label>
+        <div *ngIf="loginNaoRealizado" class="alert alert-danger" role="alert">
+            Login não realizado
+            <span (click)="esconderErro()">x</span>
+        </div>
+        <div *ngIf="loginRealizado" class="alert alert-success" role="alert">
+            Login realizado com sucesso
+            <span (click)="esconderSucesso()">x</span>
+        </div>
+        <div class="controles">
+            <button type="submit" class="salvar" (click)="validarCampos()">Salvar</button>
+        </div>
+
+        <div class="links">
+            <p [routerLink]="['/']" class="link">Login como usuário</p>
+            <p [routerLink]="['/cadastro-admin']" class="link">Cadastre-se como admin</p>
+        </div>
+    </form>
+</article>

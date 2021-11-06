@@ -1,0 +1,23 @@
+<div class="container">
+
+    <form (submit)="envioFormulario()">
+      <h5>Adicionar curso</h5>
+      <label>
+          Titulo:
+          <input type="text" name="nome" id="titulo" placeholder="" [(ngModel)]="nome">
+      </label>
+      <label>
+          Descricao:
+          <input type="text" name="sobrenome" id="descricao" placeholder="" [(ngModel)]="sobrenome">
+      </label>
+      <label>
+          Valor:
+          <input type="number" name="email" id="valor" placeholder="" [(ngModel)]="email">
+      </label>
+      <div class="controles">      
+          <p class="link" [routerLink]="['/professores']">Voltar</p>
+          <button type="submit" class="btn">Salvar</button>
+      </div>
+  </form>
+  </div>
+  
