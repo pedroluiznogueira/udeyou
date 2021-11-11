@@ -1,10 +1,6 @@
 # Udeyou
 Este é o Monorepo com os projetos da Udeyou, tanto aplicações front-end quanto api e micro-serviços.
 
-# XMB project monorepository
-
-## -- OS PROJETOS DESENVOLVIDOS ESTÃO NA BRANCH MASTER --
-
 ## Para acessar a documentação do sistema, acesse a aba Wiki deste repositório
 
 <a href="https://github.com/pedroluiznogueira/udeyou/wiki">Clique aqui para visitar a documentação</a> <br>
